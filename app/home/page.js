@@ -1,18 +1,28 @@
-import Link from "next/link";
+import Image from "next/image";
+import OurStoryPic from "../images/home-image-1.jpg";
+import styles from "./home.module.css";
 
 export default function Page() {
   return (
     <>
-      <h1>Welcome to Home Page</h1>
-      <Link href="/blog">
-        <h2>Blog</h2>
-      </Link>
-      <Link href="/conference">
-        <h2>Conference</h2>
-      </Link>
-      <Link href="/settings">
-        <h2>Settings</h2>
-      </Link>
+      <div className={styles.bgWrap}>
+        <Image
+          src={OurStoryPic}
+          alt="Our Story"
+          quality={100}
+          placeholder="blur"
+          sizes={"100vw"}
+          fill
+          style={{
+            objectFit: "cover",
+          }}
+        />
+      </div>
+      <h1 className={styles.bgHeader}>Humble beginnings a story of life</h1>
+      <p className={styles.bgText}>
+        How we became the framers of the future, tilling the technology of
+        tomorrow today.
+      </p>
     </>
   );
 }
