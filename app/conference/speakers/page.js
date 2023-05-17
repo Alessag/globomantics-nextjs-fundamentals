@@ -1,9 +1,14 @@
 import Link from "next/link";
 
-// Static site generation by default
+// Static site generation with revalidation
 async function fetchSpeakers() {
   const response = await fetch(
-    "https://raw.githubusercontent.com/adhithiravi/Consuming-GraphqL-Apollo/master/api/data/speakers.json"
+    "https://raw.githubusercontent.com/adhithiravi/Consuming-GraphqL-Apollo/master/api/data/speakers.json",
+    {
+      next: {
+        revalidate: 20,
+      },
+    }
   );
   const data = await response.json();
   return data;
