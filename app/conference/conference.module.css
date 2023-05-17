@@ -30,30 +30,51 @@
   color: #fff;
 }
 .parentContainer {
-  margin: 50px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 }
 
 .infoContainer {
   display: block;
   box-sizing: inherit;
   margin-top: 1rem;
-  background-color: #262630;
+  background-color: #fff;
+  box-shadow: -1px 3px 18px -1px rgba(0, 0, 0, 0.53);
   padding: 10px;
+  height: 200px;
 }
 
 .titleText {
   text-align: center;
   font-size: 26px;
   font-weight: 800;
-  color: #bdfef2;
+  color: #1515de;
 }
 
 .descText {
-  font-size: 14px;
-  color: #fff;
+  font-size: 18px;
+  color: #000000;
   line-height: 24px;
   flex-wrap: wrap;
   padding: 10px;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding: 0;
 }
 
 .infoText {
