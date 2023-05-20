@@ -50,10 +50,9 @@
   display: block;
   box-sizing: inherit;
   margin-top: 1rem;
-  background-color: #fff;
+  background-color: #8a7d7d;
   box-shadow: -1px 3px 18px -1px rgba(0, 0, 0, 0.53);
   padding: 10px;
-  height: 200px;
 }
 
 .titleText {

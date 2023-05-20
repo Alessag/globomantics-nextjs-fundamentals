@@ -3,7 +3,7 @@ import Link from "next/link";
 import ConferencePic from "../images/media-image-1.jpg";
 import styles from "./conference.module.css";
 
-export default function Page() {
+const Page = () => {
   return (
     <>
       <div className={styles.bgWrap}>
@@ -12,7 +12,7 @@ export default function Page() {
           alt="Conference"
           quality={100}
           placeholder="blur"
-          sizes={"100vw"}
+          sizes="100vw"
           fill
           style={{
             objectFit: "cover",
@@ -32,4 +32,5 @@ export default function Page() {
       </h2>
     </>
   );
-}
+};
+export default Page;
