@@ -1,3 +1,53 @@
 {
-  "extends": "next/core-web-vitals"
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "eqeqeq": ["error", "always"],
+    "no-await-in-loop": "error",
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "array-callback-return": [
+      "error",
+      { "allowImplicit": true, "checkForEach": true }
+    ],
+    "prefer-const": "error",
+    "no-unneeded-ternary": "error",
+    "no-nested-ternary": "error",
+    "no-mixed-operators": "warn",
+    "spaced-comment": ["error", "always", { "exceptions": ["-", "+"] }],
+    "prefer-rest-params": "error",
+    "react/boolean-prop-naming": "warn",
+    "react/function-component-definition": [
+      "warn",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "react/destructuring-assignment": "warn",
+    "react/hook-use-state": "error",
+    "react/jsx-boolean-value": ["error", "never"],
+    "react/jsx-closing-bracket-location": "error",
+    "react/jsx-curly-brace-presence": ["error", "never"],
+    "react/jsx-no-useless-fragment": ["error", { "allowExpressions": true }],
+    "react/jsx-pascal-case": "error",
+    "react/no-unused-prop-types": ["warn"],
+    "react/prop-types": "off",
+    "react/self-closing-comp": "error",
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/ban-types": "warn",
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      {
+        "prefer": "type-imports"
+      }
+    ]
+  }
 }

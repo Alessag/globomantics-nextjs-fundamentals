@@ -2,7 +2,7 @@ import Image from "next/image";
 import OurStoryPic from "../images/home-image-1.jpg";
 import styles from "./home.module.css";
 
-export default function Page() {
+const Page = () => {
   return (
     <>
       <div className={styles.bgWrap}>
@@ -11,7 +11,7 @@ export default function Page() {
           alt="Our Story"
           quality={100}
           placeholder="blur"
-          sizes={"100vw"}
+          sizes="100vw"
           fill
           style={{
             objectFit: "cover",
@@ -23,6 +23,9 @@ export default function Page() {
         How we became the framers of the future, tilling the technology of
         tomorrow today.
       </p>
+      <p>sdfdsfgdsfsdfdfgdsf</p>
     </>
   );
-}
+};
+
+export default Page;
