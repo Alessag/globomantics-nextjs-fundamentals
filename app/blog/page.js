@@ -15,7 +15,6 @@ export default async function Page() {
       <h1>Welcome to Blog Page</h1>
       <h2>
         <Link href="/home">Back to Home</Link>
-        gdfgdfgfd
       </h2>
     </>
   );
